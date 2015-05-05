@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>RSS Feeds in ofCourse and Ghost.org</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Alex's Dev Blog Atom Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Alex's Dev Blog </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/development.html">Development</a></li>
+                    <li><a href="/category/litreviews.html">LitReviews</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/rss-feeds-in-ofcourse-and-ghostorg.html" rel="bookmark"
+           title="Permalink to RSS Feeds in ofCourse and Ghost.org">RSS Feeds in ofCourse and Ghost.org</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-04-21T19:47:00-04:00">
+                Published: Tue 21 April 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/alexandria-mack.html">Alexandria Mack</a>
+        </address>
+<p>In <a href="/category/development.html">Development</a>. </p>
+<p>tags: <a href="/tag/hfoss.html">HFOSS</a> <a href="/tag/bizleg.html">BizLeg</a> </p>
+</footer><!-- /.post-info -->      <h4>ofCourse</h4>
+<p>ofCourse is an open source courseware. It's something that we're using for some of the courses in the Open Source minor. It is a location where students can share cool information that they've found as well as an easy to find location for the professor to post important information. These classes have a blogging requirement within them, so one of the pages on the courseware is the participants page. This page contains links to each of our completed homework assignments as well as a count of how many total blog posts we have. </p>
+<h5>RSS Feeds</h5>
+<p>The blog count is done through the RSS feeds of each persons individual blogs. However, with the current version, it does not handle all allowed versions of RSS feeds. As is seen in the <a href="http://tools.ietf.org/html/rfc5005#section-3">RSS specifications</a> paginating the RSS feed is a legitimate </p>
+<h4>Ghost.org</h4>
+<p>Ghost is an open source, and simple to use, blogging system. You can host your blog on their website <a href="https://ghost.org">Ghost.org</a> or you can host it pretty much anywhere else you might want to. In the most recent release version of Ghost, the RSS feed is generated paginated if you have more than 15 posts. While this normally would be fine, it's not implemented entirely correctly. Each page of the RSS feed should point to the page that came before it, as well as the page that comes after it if they exist. </p>
+<h4>The Class</h4>
+<p>All of these have lead to a major problem for me in my open source classes. We're already way past needing to have 15 blog posts in both classes. So the combination of Ghost's incorrect implementation of the RSS feed and ofCourses lack of dealing with a paginated feed anyways means I have pretty much two options. I can spend the time to do a deep dive into two different projects and fix both of them, or I can migrate my class posts to a new blog location. </p>
+<h4>My Decision</h4>
+<p>While having both of these projects as things that I could point to and say I worked on these would be awesome, I just don't honestly have the time to work on them. I already have some other personal projects that I think will teach me more for where I want to go on top of having a ton of school work. Because of this I have decided, for the time being at least, that I'm just going to mirror my class posts on a second blog.</p>
+<h4>Pelican</h4>
+<p>Along with deciding to create a second blog for this class, I had to figure out a second blogging platform to use. While there are a ton of different reasons to pick any blogging platform, I decided on Pelican. This was mostly a decision of convenience as the people who were around me at the time that I made the choice both use it and were able to help me get everything set up.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
